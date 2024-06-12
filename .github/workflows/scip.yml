@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Get src-cli
-        run: curl -L https://nxpkg.com/.api/src-cli/src_linux_amd64 -o /usr/local/bin/src;
+        run: curl -L https://nxpkg.github.io/.api/src-cli/src_linux_amd64 -o /usr/local/bin/src;
           chmod +x /usr/local/bin/src
       - name: Set directory to safe for git
         run: git config --global --add safe.directory $GITHUB_WORKSPACE
